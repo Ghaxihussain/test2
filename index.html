@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px; /* Adjust the padding to match the height of the navbar */
+        }
+
+        .navbar {
+            background-color: #f8f9fa; /* Light grey background color */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .menu-heading {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .menu-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .menu-card {
+            width: 30%; /* Adjust the width as needed */
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .menu-card.selected {
+  background-color: #f8f9fa; /* Light grey background color */
+}
+
+
+        @media (max-width: 768px) {
+            .menu-card {
+                width: 48%; /* Adjust the width for tablet view */
+            }
+
+            .sushi-card {
+                width: 100%; /* Full width for the sushi card */
+            }
+        }
+        @media (max-width:  500px) {
+            .menu-card {
+                width: 100%; /* Full width for mobile view */
+            }
+
+            .navbar-toggler-icon {
+                background-color: #ffffff; /* Color of the mobile menu icon */
+            }
+            p{
+                font-size: 2vh;
+            }
+        }
+    </style>
+    <title>Your Bootstrap Website</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Foods, LLC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Chicken">Chicken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Beef">Beef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sushi">Sushi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container mt-5">
+    <h2 class="menu-heading">Our Menu</h2>
+
+    <div class="menu-cards">
+        <div class="card menu-card">
+            <div class="card-body">
+                <h5 class="card-title" id ="Chicken">Chicken</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi nobis quis alias incidunt eligendi dignissimos. Repellendus dolores aperiam error libero nihil recusandae, similique corporis qui consequuntur eaque consequatur debitis! Laudantium.
+                    Dignissimos possimus rerum unde vero. Consectetur adipisci nemo, omnis corrupti libero reprehenderit asperiores dicta sint, modi, magnam deserunt atque nisi sequi deleniti! Ducimus sit rem eveniet explicabo recusandae accusamus doloribus?
+                    Voluptas magni pariatur iusto dolore deserunt voluptates tempore, ratione ex excepturi animi quo recusandae? Molestiae dolorem culpa dolorum ad accusantium enim, numquam alias iure quo? Quasi autem molestias optio ut!
+ </p>
+            </div>
+        </div>
+
+        <div class="card menu-card">
+            <div class="card-body">
+                <h5 class="card-title" id="Beef">Beef</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi nobis quis alias incidunt eligendi dignissimos. Repellendus dolores aperiam error libero nihil recusandae, similique corporis qui consequuntur eaque consequatur debitis! Laudantium.
+                    Dignissimos possimus rerum unde vero. Consectetur adipisci nemo, omnis corrupti libero reprehenderit asperiores dicta sint, modi, magnam deserunt atque nisi sequi deleniti! Ducimus sit rem eveniet explicabo recusandae accusamus doloribus?
+                    Voluptas magni pariatur iusto dolore deserunt voluptates tempore, ratione ex excepturi animi quo recusandae? Molestiae dolorem culpa dolorum ad accusantium enim, numquam alias iure quo? Quasi autem molestias optio ut!
+ </p>
+            </div>
+        </div>
+
+        <div class="card menu-card sushi-card">
+            <div class="card-body">
+                <h5 class="card-title" id ="Sushi">Sushi</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi nobis quis alias incidunt eligendi dignissimos. Repellendus dolores aperiam error libero nihil recusandae, similique corporis qui consequuntur eaque consequatur debitis! Laudantium.
+                Dignissimos possimus rerum unde vero. Consectetur adipisci nemo, omnis corrupti libero reprehenderit asperiores dicta sint, modi, magnam deserunt atque nisi sequi deleniti! Ducimus sit rem eveniet explicabo recusandae accusamus doloribus?
+                Voluptas magni pariatur iusto dolore deserunt voluptates tempore, ratione ex excepturi animi quo recusandae? Molestiae dolorem culpa dolorum ad accusantium enim, numquam alias iure quo? Quasi autem molestias optio ut!
+              </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
